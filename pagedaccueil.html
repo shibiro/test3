@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- toutes les polices -->
+		<meta charset="UTF-8"/>
+		<!-- titre du site -->
+		<title> LebonCoing </title>
+	</head>
+	
+	<body>
+	
+	<header>
+		 <img src="banniere1.png" alt="banniere" />
+	</header>
+	
+	<nav>
+		<!-- Menu de la barre de navigation -->
+		<ul>
+
+			<li>
+                <a href="#">accueil</a>
+			</li>
+        
+			<li>
+                <a href="#">membres</a>
+			</li>
+        
+			<li>
+                <a href="#">forums</a>
+			</li>
+        
+			<li>
+                <a href="#">Annonces</a>
+			</li>
+        
+		</ul>
+	</nav>
+	
+	<nav>	<!-- connexion ici ? -->
+		<form method="post" action="traitement.php">
+			<p>
+				<label for="pseudo">Votre pseudo :</label>
+				<input type="text" name="pseudo" id="pseudo" />
+       
+				<br />
+				<label for="pass">Votre mot de passe :</label>
+				<input type="password" name="pass" id="pass" />
+       
+			</p>
+		</form>
+	</nav>
+	
+	<nav>	<!-- recherche annonces ? -->
+		<form method="post" action="traitement.php">
+			<p>
+				<select name="type" id="type">
+					<option value="null">type</option>
+					<option value="Legume">Legume</option>
+					<option value="Fruit">Fruit</option>
+				</select>
+			</p>
+			<p>
+				<select name="pays" id="pays">
+					<option value="france">France</option>
+					<option value="espagne">Espagne</option>
+				</select>
+			</p>
+			<p>
+				<select name="Region" id="Region">
+					<option value="null">Region</option>
+					<option value="iles-de-france">iles-de-france</option>
+					<option value="Autres">Autres</option>
+				</select>
+			</p>
+
+		</form>
+	</nav>
+	
+	<section>
+	</section>
+	
+	<section>
+	</section>
+	
+	<footer>
+	<p> Aide </p>
+	<p> Conditions d'utilisations </p>
+	</footer>
+	
+	</body>
+</html>
